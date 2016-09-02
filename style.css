@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/*Theme Name: Festival
+Theme URI: www.joseramonruiz.eu
+Author: José Ramón Ruiz Rodríguez
+Description: Tema para mostrar cómo se construye un sitio con WordPress
+*/
+
+
+body{
+	background: #FFF ;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	width: 100%;
+	padding: 1em 0;
+	overflow: hidden;
+}
+
+header, footer{
+	background: #4b6cb7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+}
+
+header p{
+	font-size: 2em;
+	float: left;
+	color: white;
+}
+
+section{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+article{
+	width: 33%;
+	float: left;
+	height: 420px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: blue;
+}
+
+header a{
+	color: white;
+}
+
+header a:visited{
+	color: white;
+}
+
+li{
+	list-style: none;
+}
+
+header ul{
+	margin-top: 2em;
+	float: right;
+
+}
+
+header ul li{
+	display: inline-block;
+	margin-right: 1em;
+	line-height: 2em;
+}
+
+header p{
+	margin-left: 1em;
+}
+
+footer{
+	width: 100%;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+}
+
+
+article p{
+	margin-left: 50px;
+}
+
+article img{
+	border: 10px solid white;
+	margin-left:50px;
+	-webkit-box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
+	-moz-box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
+	box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
+}
+
+
+.derecha, .izquierda{
+	width: 50%;
+	float: left;
+}
+
+.single{
+	width: 100%;
+}
+
+.negrita{
+	font-weight: bold;
+}
+label{
+	width: 300px;
+	float: left;
+}
+
+html, body {height: 100%;}
+
+.contenedor {min-height: 100%;}
+
+section {
+	overflow:auto;
+	padding-bottom: 100px;
+	}  /* must be same height as the footer */
+
+footer {position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height: 100px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+footer div{
+	padding: 1em;
+	margin: auto;
+}
+
