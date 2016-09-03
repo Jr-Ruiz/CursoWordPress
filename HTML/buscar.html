@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="description" content='Web de muestra para el curso de Wordpress'/>
+
+	<title>I Festival de Cine Ínsula de Barataria</title>
+	<meta name='robots' content='noindex,follow' />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link rel='stylesheet' href='css/normalize.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+	<header>
+		<p><a href="#">I Festival de Cine Ínsula de Barataria</a></p>
+	
+	<ul>
+		<li><a href=#">Inicio</a></li>
+		<li><a href="#">Sección Oficial</a></li>
+		<li><a href="#">Búsqueda de Películas</a></li>
+	</ul>	
+	</header>	
+	
+	<section>
+	<h2>Búsqueda de películas</h1>
+
+		<form name="search" method="get" action="http://localhost/wordpress">
+
+			<div>
+				<label for="palabra">Búsqueda por palabra clave:</label>
+				<input id="palabra" type="text" name="palabra" >
+			</div>
+			
+			<div>
+				<label for="director">Búsqueda por director/a: </label>
+				<input id="director" type="text" name="director" >
+			</div>
+
+			<input id="s" type="hidden" name="s" value="film">
+
+			<label>Búsqueda por género:</label>	
+		
+      <select name="tax" id="tax">
+			  <option value="Charla">Charla</option><option value="Documental">Documental</option><option value="Drama">Drama</option>
+			</select> 
+				
+			<div>
+				<button type="submit">Buscar</button>
+			</div>
+
+		</form>
+	</section>
+
+
+	</div> <!--cerramos el contenedor-->
+	<footer>
+		<div>
+			<p>I Festival de Cine Ínsula de Barataria. All wrongs reserved.</p>
+		</div>
+	</footer>
+
+			
+	</body>
+</html>	
