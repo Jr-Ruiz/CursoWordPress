@@ -140,3 +140,19 @@ footer div{
 	margin: auto;
 }
 
+form label, form input, form button, form select{
+        margin: 1em 0;
+}
+
+form button{
+	width: 15em;
+}
+
+.cse{
+ clear: both;
+ width: 300px;
+ float: right;
+ margin-right: 1em;
+ margin-top: -2em;
+}
+
