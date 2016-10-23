@@ -12,7 +12,7 @@ add_action('admin_menu','añadir_soporte_menu');
 
 function añadir_soporte_page_settings(){
 	global $ancho, $alto;
-	wp_enqueue_style( 'estilos_admin', plugins_url( 'css/añadir_imagen.css', __FILE__ ) );
+	wp_enqueue_style( 'estilos_admin', plugins_url( 'css/añadir-imagen.css', __FILE__ ) );
 ?>
   <div id="opciones">
     <h2>Tamaño de la imagen a añadir</h2>
