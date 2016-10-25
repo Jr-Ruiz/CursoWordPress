@@ -35,7 +35,7 @@ function añadir_soporte_imagenes(){
 
 add_action("admin_init", "añadir_soporte_imagenes");
 
-function my_save_post_function( $post_ID, $post, $update ) {
+function guardar_iamgen( $post_ID, $post, $update ) {
 	global $post,$ancho, $alto;
 	
 	if($post){
@@ -45,7 +45,7 @@ function my_save_post_function( $post_ID, $post, $update ) {
 	}
 }
 
-add_action( 'save_post', 'my_save_post_function', 10, 3 );
+add_action( 'save_post', 'guardar_imagen', 10, 3 );
 
 include 'opciones.php';
 ?>
