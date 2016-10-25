@@ -18,8 +18,8 @@ function añadir_soporte_page_settings(){
     <h2>Tamaño de la imagen a añadir</h2>
       <form method="POST" action="options.php">
         <?php
-          settings_fields('prueba');
-          do_settings_sections('prueba');
+          settings_fields('tamaño');
+          do_settings_sections('tamaño');
         ?>
         
         <div>
@@ -41,10 +41,10 @@ function añadir_soporte_page_settings(){
 }
 
 function añadir_soporte_settings(){
-	register_setting('prueba','ancho','intval');
-	register_setting('prueba','alto','intval');
+	register_setting('tamaño','ancho');
+	register_setting('tamaño','alto');
 }
 
-add_Action('admin_init', 'añadir_soporte_settings');
+add_action('admin_init', 'añadir_soporte_settings');
 
 ?>
