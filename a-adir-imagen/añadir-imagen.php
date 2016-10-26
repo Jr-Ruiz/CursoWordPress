@@ -6,7 +6,7 @@
 	Version: 1.0
 	Author: José Ramón Ruiz Rodríguez
 	Author URI: http://www.joseramonruiz.eu
-License: MIT
+	License: MIT
 **/
 
 $ancho=220;
@@ -28,9 +28,8 @@ add_action("admin_init", "inicializar");
 
 function añadir_soporte_imagenes(){
 	global $ancho, $alto;
-	
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( $campo, $alto, true );
+	add_image_size( 'cartel', $alto, true );
 }
 
 add_action("admin_init", "añadir_soporte_imagenes");
