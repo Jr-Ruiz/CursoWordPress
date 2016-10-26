@@ -34,7 +34,7 @@ function añadir_soporte_imagenes(){
 
 add_action("admin_init", "añadir_soporte_imagenes");
 
-function guardar_iamgen( $post_ID, $post, $update ) {
+function guardar_imagen( $post_ID, $post, $update ) {
 	global $post, $alto;
 	
 	if($post){
