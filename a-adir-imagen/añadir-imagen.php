@@ -13,7 +13,7 @@ $ancho=220;
 $alto=360;
 
 function inicializar(){
-	global $alto, $campo; //RECORDAD que con global hacemos uso de variables declaradas fuera del ámbito de la función
+	global $alto, $ancho; //RECORDAD que con global hacemos uso de variables declaradas fuera del ámbito de la función
 
 	if(get_option('ancho')){
 		$ancho= get_option('ancho');
@@ -27,16 +27,16 @@ function inicializar(){
 add_action("admin_init", "inicializar");
 
 function añadir_soporte_imagenes(){
-	global $ancho, $alto, $campo;
+	global $ancho, $alto;
 	
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( $campo, $ancho, $alto, true );
+	add_image_size( $campo, $alto, true );
 }
 
 add_action("admin_init", "añadir_soporte_imagenes");
 
 function guardar_iamgen( $post_ID, $post, $update ) {
-	global $post,$ancho, $alto;
+	global $post, $alto;
 	
 	if($post){
 		$thumbID=get_post_thumbnail_id($post->ID);
