@@ -22,3 +22,4 @@ function scripts_lightbox() {
 }
 
 add_action( 'wp_enqueue_scripts', 'scripts_lightbox' );
+?>
