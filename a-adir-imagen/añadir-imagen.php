@@ -29,7 +29,7 @@ add_action("admin_init", "inicializar");
 function añadir_soporte_imagenes(){
 	global $ancho, $alto;
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'cartel', $alto, $ancho, true );
+	add_image_size( 'cartel', $ancho, $alto, true );
 }
 
 add_action("admin_init", "añadir_soporte_imagenes");
