@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*Theme Name: Festival
 Theme URI: www.joseramonruiz.eu
@@ -6,14 +6,23 @@ Author: José Ramón Ruiz Rodríguez
 Description: Tema para mostrar cómo se construye un sitio con WordPress
 */
 
-body{
-	background: #FFF ;
-	font-family: 'Open Sans', sans-serif;
+html, body {
+    height: 100%;
+}
+
+body .container{
+	padding-top: 60px;
+}
+
+.contenido{
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -100px;
+    padding-bottom: 100px;
 }
 
 header{
-	width: 100%;
-	padding: 1em 0;
+	padding: 1em 0.5em;
 	overflow: hidden;
 }
 
@@ -24,122 +33,37 @@ header, footer{
          
 }
 
-header p{
+header h1{
 	font-size: 2em;
-	float: left;
-	color: white;
-}
-
-section{
-	width: 80%;
-	margin: auto;
-	overflow: hidden;
-}
-
-article{
-	width: 33%;
-	float: left;
-	height: 420px;
-}
-
-a{
-	text-decoration: none;
-}
-
-a:visited{
-	color: blue;
-}
-
-header a{
-	color: white;
-}
-
-header a:visited{
-	color: white;
-}
-
-li{
-	list-style: none;
 }
 
 header ul{
 	margin-top: 2em;
 	float: right;
-
 }
 
 header ul li{
 	display: inline-block;
 	margin-right: 1em;
 	line-height: 2em;
+	font-size: 1em;
 }
 
-header p{
-	margin-left: 1em;
-}
-
-footer{
-	width: 100%;
-}
-
-footer p{
-	color: white;
-	text-align: center;
-}
-
-
-article p{
-	margin-left: 50px;
-}
-
-article img{
+section img{
 	border: 10px solid white;
-	margin-left:50px;
 	-webkit-box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
 	-moz-box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
 	box-shadow: 10px 10px 8px -4px rgba(214,206,214,1);
 }
 
-
-.derecha, .izquierda{
-	width: 50%;
-	float: left;
-}
-
-.single{
-	width: 100%;
-}
-
 .negrita{
 	font-weight: bold;
 }
-label{
-	width: 300px;
-	float: left;
-}
 
-html, body {height: 100%;}
-
-.contenedor {min-height: 100%;}
-
-section {
-	overflow:auto;
-	padding-bottom: 100px;
-	}  /* must be same height as the footer */
-
-footer {position: relative;
-	margin-top: -100px; /* negative value of footer height */
+footer {
+	position: relative;
 	height: 100px;
-	clear:both;} 
-
-/*Opera Fix*/
-body:before {
-	content:"";
-	height:100%;
-	float:left;
-	width:0;
-	margin-top:-32767px;/
-}
+} 
 
 footer div{
 	padding: 1em;
@@ -147,18 +71,27 @@ footer div{
 }
 
 form label, form input, form button, form select{
-        margin: 1em 0;
+	margin: 1em 0;
 }
 
 form button{
 	width: 15em;
 }
 
-.cse{
- clear: both;
- width: 300px;
- float: right;
- margin-right: 1em;
- margin-top: -2em;
+section.container a{
+	color: #4b6cb7;
+	text-decoration: none;
 }
 
+footer p, header a, header a:visited, header a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+input.gsc-search-button-v2{
+	box-sizing: content-box;
+}
+
+.blanco{
+	color: white;
+}
