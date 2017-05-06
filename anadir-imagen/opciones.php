@@ -18,8 +18,8 @@ function anadir_soporte_page_settings(){
     <h2>Tamaño de la imagen a añadir</h2>
       <form method="POST" action="options.php">
         <?php
-          settings_fields('tamaño');
-          do_settings_sections('tamaño');
+          settings_fields('tamano');
+          do_settings_sections('tamano');
         ?>
         
         <div>
@@ -41,8 +41,8 @@ function anadir_soporte_page_settings(){
 }
 
 function anadir_soporte_settings(){
-	register_setting('tamaño','ancho');
-	register_setting('tamaño','alto');
+	register_setting('tamano','ancho');
+	register_setting('tamano','alto');
 }
 
 add_action('admin_init', 'anadir_soporte_settings');
