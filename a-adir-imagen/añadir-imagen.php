@@ -26,13 +26,13 @@ function inicializar(){
 
 add_action("admin_init", "inicializar");
 
-function añadir_soporte_imagenes(){
+function anadir_soporte_imagenes(){
 	global $ancho, $alto;
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'cartel', $ancho, $alto, true );
 }
 
-add_action("admin_init", "añadir_soporte_imagenes");
+add_action("admin_init", "anadir_soporte_imagenes");
 
 function guardar_imagen( $post_ID, $post, $update ) {
 	global $post, $alto;
